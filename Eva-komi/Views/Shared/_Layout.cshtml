@@ -3,40 +3,67 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <meta name="description" content="Вызвать эвакуатор в Сыктывкаре" />
+    <meta name="keywords" content="Эвакуатор Сыктывкар, эвакуатор вызвать, Эвакуировать автомобиль" />
+    <title>@ViewBag.Title - Сыктывкар и республика Коми</title>
+    <link href="~/logo.png" rel="icon" runat="server" type="image/ico" />
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+    <header>
+        <div class="top-menu">
+            <ul>
+                <li>
+                    <a href="tel:340111">Быстрый заказ Эвакуатора</a>
+                </li>
+                <li>
+                    <a href="~/Home/Index/#price">Цены на Эвакуатор</a>
+                </li>
+                <li>
+                    <a href="~/home/Index/#about">Об Эвакуации авто</a>
+                </li>
+                <li style="float: right">
+                    <button class="call btn btn-primary">Быстрый вызов</button> <br />
+                    <span class="li--description">Приедет в течении 20 минут</span>
+                </li>
+                <li style="float: right">
+                    <a href="tel:340111">340-111</a>
+                </li>
+            </ul>
+        </div>
+        <!-- mobile version-->
+        <div class="mobile-menu">
+            <div class="landing-main--active-car-m">
+                <img height="50" alt="active evacuator" src="~/Images/new/Car.png" />
+                <div>
+                    Свободно 2 эвакуатора
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
+            <div class="cont">
+                <button class="call btn btn-primary">Быстрый вызов</button> <br />
+                <span class="li--description">Приедет в течении 20 минут</span>
             </div>
         </div>
-    </div>
-    <div class="container body-content">
+
+
+
+    </header>
+
+    <div class="body">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Эва-Коми. Эвакуация автомобилей   <br /> 
+            Сайт разработан <a href="https://unclespace.ru">UncleSpace.ru</a></p>
+            
         </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/scripts/custom-script.js")
     @RenderSection("scripts", required: false)
 </body>
 </html>
+

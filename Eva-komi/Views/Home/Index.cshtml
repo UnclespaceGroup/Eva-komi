@@ -1,31 +1,170 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Вызвать эвакуатор";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<div class="landing-main-image">
+    <div class="landing-main">
+
+        <div class="landing-main-content">
+            <h1>
+                Закажите эвакуатор
+            </h1>
+            <a href="tel:340111" class="btn-call">Вызвать</a>
+        </div>
+
+        <div class="landing-main-description">
+            <ul>
+                <li>Круглосуточная работа, без выходных</li>
+                <li>Сыктывкар и республика Коми</li>
+                <li>Дешёвый и доступный эвакуатор</li>
+            </ul>
+        </div>
+        <div class="landing-main--active-car">
+            <img height="100" src="~/Images/new/Car.png" alt="active evacuator syktyvkar" />
+            <div>
+                Свободны 2 машины
+            </div>
+        </div>
+        <button class="btn-toPrice">
+            <h2>
+                Цены на услуги
+            </h2>
+            <img height="20" src="~/Images/new/str.png" />
+        </button>
+
+    </div>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+<div class="landing-adventeges">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="~/Images/Created_folder_image.png" alt="evacuator syktyvkar" />
+                <div class="landing-adventeges--content">
+                    <h2>Эвакуатор Сыктывкар</h2>
+                    Большой автопарк позволяет мгновенно обрабатывать заказы.
+                    Ожидание эвакуатора не займет много времени. Мы работаем не только в Сыктывкаре, но и по всей республике. 
+                    Занимаемся перевозками авто как по городу, так и меж, включая эвакуацию в другие регионы
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img src="~/Images/Created_folder_image2.png" alt="Вызвать эвакуатор" />
+                <div class="landing-adventeges--content">
+                    <h2>Вызвать эвакуатор</h2>
+                    Для вызова эвакуатора просто позвоните по номеру <a href="tel:340111">340-111</a>.
+                    Диспетчер мгновенно ответит и отправит Вам свободную машину
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img src="~/Images/Created_folder_image3.png" alt="Круглосуточный эвакуатор" />
+                <div class="landing-adventeges--content">
+                    <h2>Круглосуточный эвакуатор</h2>
+                    Мы работаем круглосуточно, без выходных. Готовы предложить помощь в любое время суток, 
+                    в выходные и праздничные дни. Готовы ответить на звонок в любое не самое удобное время и предложить
+                    помощь клиенту
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img src="~/Images/Created_folder_image4.png" alt="Дешёвый эвакуатор" />
+                <div class="landing-adventeges--content">
+                    <h2>Дешёвый эвакуатор</h2>
+                    Низкие цены за качественные услуги. Никаких переценок и двойных тарифов. Мы добиваемся справедливости цен,
+                    нам гораздо важнее получит удовлетворённог клиента, чем попытаться извлечь дополнительную выгоду
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
+<hr />
+<!-- prices block -->
+<div class="price-list" id="price">
+    <div class="price-list--in-city">
+        <div>
+            <div class="price-list--price-single">
+                <img src="~/Images/ргуаорыар.jpg" alt="Эвакуировать легковое авто" />
+                <div class="price-list--price-single--content">
+                    <h2>до 1 тонны</h2>
+                    <h3>Легковые малолитражные автомобили</h3>
+                    <div>1200₽</div>
+                    <button class="call btn btn-primary">Эвакуировать</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="price-list--price-single">
+                <img src="~/Images/Без имени-1.jpg" alt="Эвакуировать легковое авто" />
+                <div class="price-list--price-single--content">
+                    <h2>до 1.5 тонн</h2>
+                    <h3>Легковые автомобили, легкие внедорожники</h3>
+                    <div>1500₽</div>
+                    <button class="call btn btn-primary">Эвакуировать</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="price-list--price-single">
+                <img src="~/Images/xrayCropped.jpg" alt="Эвакуировать внедорожник, джип" />
+                <div class="price-list--price-single--content">
+                    <h2>до 2 тонны</h2>
+                    <h3>Внедорожники и кроссоверы</h3>
+                    <div>1600₽</div>
+                    <button class="call btn btn-primary">Эвакуировать</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="price-list--price-single">
+                <img src="~/Images/8de48f63a27edb8eafe21ee08ce9984fa4658f61.png" alt="Эвакуировать грузовик, микроавтобус" />
+                <div class="price-list--price-single--content">
+                    <h2>до 1 тонны</h2>
+                    <h3>Тяжелые внедородники и микроавтобусы</h3>
+                    <div>1200₽</div>
+                    <button class="call btn btn-primary">Эвакуировать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="price-list--in-road">
+        <img src="~/Images/dsfds.png" alt="Эвакуация в другой город"/>
+        <div class="price-list--in-road--content">
+            <h2>За городом</h2>
+            <h3>Перевозки между городами, эвакуация авто с трассы</h3>
+            <div class="price">
+                от 40₽ <span>за километр</span>
+            </div>
+            В зависимости от массы авто
+        </div>
+    </div>
+</div>
+
+<hr />
+<div class="about" id="about">
+    <div class="container">
+
+        От аварий и ДТП никто не застрахован никто. Аварии случаются и владельцам требуются услуги по эвакуации.
+        Также бывают моменты, когда требуется доставить неисправный автомобиль в другое место, или даже в другой город.<br />
+        Эва-коми - Компания с огромным стажем по оказанию услуг эвакуации. <br />
+        Мы работаем по всей республике. Можем эвакуировать авто в любой населённый пункт, как по республике, так и по всей России.
+        Для консултации или заказа эвакуатора вам доступны следующие номера:
+        <ul>
+            <li>
+                <a href="tel:89128640111">+7(912) 864-01-11</a>
+            </li>
+            <li>
+                <a href="tel:88212340111">+7(821) 234-01-11</a>
+            </li>
+            <li>
+                <a href="tel:89630221679">+7(963) 022-16-79</a>
+            </li>
+        </ul>
+        Нажмите на номер чтобы начать звонок
+    </div>
+</div>
+<div style="text-align: center">
+
+</div>
+

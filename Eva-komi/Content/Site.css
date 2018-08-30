@@ -1,6 +1,4 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +19,255 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.top-menu {
+    position: fixed;
+    width: 100%;
+    padding: 20px 100px 20px 100px;
+    z-index: 100;
+}
+
+    .top-menu li {
+        margin-left: 20px;
+        display: inline-block;
+    }
+
+    .top-menu a {
+        border-bottom: solid;
+        text-decoration: none;
+        color: rgb(128, 128, 128);
+        font-size: 16px;
+        padding: 10px 20px 10px 20px;
+        display: block;
+    }
+
+        .top-menu a:hover {
+            color: orange;
+        }
+
+    .top-menu button {
+        width: 180px;
+    }
+
+.mobile-menu {
+    display: none;
+    background-color: rgba(0,0,0,0.75);
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    padding: 5px 10% 5px 10%;
+}
+
+    .mobile-menu .cont {
+        padding-top: 10px;
+        float: right;
+        text-align: center;
+    }
+        .mobile-menu .cont button{
+            margin-bottom: 4px;
+        }
+
+        .mobile-menu .landing-main--active-car-m {
+            display: inline-block;
+            text-align: center;
+            border-color: wheat;
+            color: white;
+        }
+
+@media screen and (max-width: 1024px) {
+    .mobile-menu {
+        display: block;
+    }
+
+    .top-menu {
+        display: none;
+    }
+}
+
+
+.li--description {
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.landing-main {
+    position: relative;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 2;
+}
+
+.landing-main-image {
+    height: 100vh;
+    background-image: url(/Images/O6fZQj_4knM.jpg);
+    background-size: cover;
+    z-index: 1;
+}
+
+.landing-main-content {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    color: white;
+}
+
+.btn-toPrice {
+    position: absolute;
+    top: 90vh;
+    left: 45%;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    border: none;
+    z-index: 100;
+}
+    .btn-toPrice > h2{
+        margin-top: 0;
+        font-size: 18px;
+    }
+    .btn-toPrice:hover{
+        color: orange;
+    }
+
+    .btn-call {
+        margin: 20px 20px 20px 20px;
+        display: inline-block;
+        color: white;
+        font-size: 18px;
+        padding: 10px 20px 10px 20px;
+        border: solid;
+        border-color: white;
+        background-color: rgba(114, 48, 0, 0.3);
+    }
+
+    .btn-call:hover {
+        text-decoration: none;
+        color: white;
+        background-color: rgba(114, 48, 0, 0.8);
+    }
+
+.landing-main-description {
+    position: absolute;
+    top: 400px;
+    left: 50px;
+    color: white;
+    font-size: 22px;
+}
+
+    .landing-main-description li {
+        list-style-type: none;
+    }
+
+.landing-main--active-car {
+    position: absolute;
+    top: 40vh;
+    left: 80%;
+    color: white;
+    font-size: 18px;
+    z-index: 50;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+
+.landing-adventeges {
+    margin: 50px 0 0px 0;
+    text-align: center;
+}
+
+.landing-adventeges--content {
+    margin-top: -70px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.price-list{
+    padding-top: 100px;
+}
+
+.price-list--in-city {
+    width: 100%;
+    text-align: center;
+}
+
+.price-list--price-single {
+}
+
+    .price-list--price-single:hover {
+    }
+
+    .price-list--price-single img {
+        margin-top: -50px;
+        height: 300px;
+    }
+
+.price-list--price-single--content {
+    display: inline-block;
+    font-size: 18px;
+}
+
+    .price-list--price-single--content div {
+        font-size: 40px;
+    }
+
+.price-list--in-road img {
+    height: 300px;
+}
+
+.price-list--in-road--content {
+    display: inline-block;
+    font-size: 20px;
+}
+
+    .price-list--in-road--content .price {
+        font-size: 40px;
+    }
+
+        .price-list--in-road--content .price span {
+            font-size: 20px;
+        }
+
+@media screen and (max-width: 1024px) {
+    .price-list--in-road img {
+        display: none;
+    }
+
+    .price-list--price-single img {
+        margin-bottom: -50px;
+        margin-top: 50px;
+        height: 300px;
+    }
+
+    .price-list--in-road {
+        margin: 50px 5% 50px 5%;
+    }
+
+    .landing-main--active-car {
+        display: none;
+    }
+
+    .landing-main--active-car-m {
+        display: block;
+    }
+    .landing-main-description{
+        top: 410px;
+        left: 7px;
+    }
+}
+
+.about {
+    font-size: 18px;
+    margin: 100px 0 100px 0;
+}
+
+footer {
+    padding: 20px 0 0 20px;
+    height: 100px;
+    color: white;
+    background-color: rgba(0,0,0,0.8);
 }
